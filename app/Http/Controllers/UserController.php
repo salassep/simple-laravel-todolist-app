@@ -48,8 +48,9 @@ class UserController extends Controller
         ]);
     }
 
-    public function doLogout()
+    public function doLogout(Request $request)
     {
-        # code...
+        $request->session()->forget("user");
+        return redirect("/");
     }
 }
