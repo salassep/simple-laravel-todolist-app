@@ -14,7 +14,7 @@
     @if(isset($error))
       <div class="row">
           <div class="alert alert-danger" role="alert">
-              A simple primary alert—check it out!
+              {{$error}}
           </div>
       </div>
     @endif
